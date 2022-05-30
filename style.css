@@ -2,20 +2,23 @@ body {
     background: lightblue;
 }
 
-section {
-    background: lightblue;
+.section {
+    background: rgb(137, 194, 212);
 }
 
-h1 {
+.main-heading {
     color: red;
 }
+
+.secondary-heading {
+    color: #41850d;
+}
+
 p {
     color: grey;
 }
-h2 {
-    color: #41850d;
-}
-.hotpink-header {
+
+.special-heading {
     color: hotpink;
 }
 
@@ -29,6 +32,11 @@ a {
 
 nav a {
     color: yellow;
+
+}
+
+.header {
+    background: olive;
 }
 
 img {
