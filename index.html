@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="nauka-html.html">Nauka HTML</a>
-            <a href="nauka-css.html">Nauka CSS</a>
+    <header>
+        <nav class="navigation">
+            <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+            <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
+            <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
 
         </nav>
 
@@ -27,7 +27,7 @@
 
 
         <header id="top">
-            <h1 class="main-heading">Michał Głos - Strona domowa</h1>
+            <h1 class="main-heading main-heading--js">Michał Głos - Strona domowa</h1>
         </header>
 
         <section class="section">
@@ -41,20 +41,31 @@
 
         <section class="section" id="notatki">
             <h2 class="secondary-heading">Notatki z WTF: Co ten Frontend</h2>
-            <article>
-                <h3 class="special-heading">Jak stworzyć prawidłowego HTML-a?</h3>
-                <p>Tworzenie zgodnego ze standardami HTML-a to sztuka, którą do perfekcji opanowało niewielu. Jeśli
+            <article class="week-summary">
+                <h3 class="week-summary__title">Jak stworzyć prawidłowego HTML-a?</h3>
+                <p class="week-summary__description">Tworzenie zgodnego ze standardami HTML-a to sztuka, którą do
+                    perfekcji opanowało niewielu. Jeśli
                     chcesz stać się częścią tej grupy, musisz wykazać się otwartą głową i dużą ilością wolnego czasu...
                 </p>
             </article>
-            <article>
-                <h3 class="special-heading">Czy nauka szkolenia to prosta sprawa</h3>
-                <p>Na początku myślałem, że to całe szkolenie to nic trudnego i nauczę się za pierwszym podejściem <b>(o
+            <article class="week-summary">
+                <h3 class="week-summary__title">Czy nauka szkolenia to prosta sprawa</h3>
+                <p class="week-summary__description">Na początku myślałem, że to całe szkolenie to nic trudnego i nauczę
+                    się za pierwszym podejściem <b>(o
                         ja
                         głupiutki)</b>. Samo siedzenie i skupianie sie kosztuje masę energii i jest męczące! Na
                     szczęście dzięki
                     wsparciu i motywacji bliskich i zacięcia udało mi się zmobilizować do nauki, która każdego dnia
                     odkrywa przede mną kolejne tajemnice frontendu i przybliża mnie do pracy w tej dziedzinie.</p>
+            </article>
+
+            <article class="week-summary week-summary__special">
+                <h3 class="week-summary__title">Czemu trawa jest zielona?</h3>
+                <p class="week-summary__description">Bo nie jest niebieska, a tak naprawdę w kwestii składników, które
+                    budują rośliny za zieloną barwę traw odpowiada chlorofil.
+                    Jest to naturalnie występujący w przyrodzie barwnik i to on sprawia, że trawy i liście posiadają
+                    taki, nie inny kolor. Dlatego też rośliny dość mocno barwią nasze ubrania, gdy np.: siadamy na
+                    trawie. Jest to wyjątkowo mocny i intensywny barwik, który ciężko usunąć.</p>
             </article>
         </section>
 

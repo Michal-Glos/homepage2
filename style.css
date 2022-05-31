@@ -22,9 +22,6 @@ p {
     color: hotpink;
 }
 
-#top {
-    background: purple;
-}
 
 a {
     color: palevioletred;
@@ -35,9 +32,6 @@ nav a {
 
 }
 
-.header {
-    background: olive;
-}
 
 img {
     max-width: 100%;
@@ -54,4 +48,38 @@ img {
     padding: 10px 0;
     height: 200px;
     width: 200px;
+}
+
+.navigation {
+    background: darkmagenta;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.navigation__link {
+    color: #fff;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navigation__link--homepage {
+    background: darkolivegreen;
+    color: rgb(23, 190, 219)
+}
+
+.week-summary {
+    padding: 16px;
+    border: 1px rgb(255, 0, 0) solid;
+    margin-bottom: 16px;
+
+}
+.week-summary__special {
+    border-color: yellow;
+}
+
+.week-summary__description{
+    color:black;
+}
+.week-summary__title {
+    color: blueviolet;
 }
