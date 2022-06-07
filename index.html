@@ -23,24 +23,24 @@
 
 
 
-    <main>
+    <main class="main">
 
 
-        <header id="top">
-            <h1 class="main-heading main-heading--js">Michał Głos - Strona domowa</h1>
+        <header class="main__header" id="top">
+            <h1 class="main__heading main__heading--js">Michał Głos - Strona domowa</h1>
         </header>
 
-        <section class="section">
-            <h2 class="secondary-heading">Kim jestem?</h2>
-            <img src="Michal-glos.jpg" alt="Poważny Michał" />
-            <p>Hej na codzień jestem zwykłym człowiekiem, a czasami staje się psychiczny. Kocham moją żonę która jest
-                moim aniołkiem i najlepszym moim człoiwekiem.<a href="https://Onet.pl">Wiadomości codzienne</a><br>
+        <section class="about">
+            <h2 class="about__heading">Kim jestem?</h2>
+            <img class="about__picture" src="Michal-glos.jpg" alt="Poważny Michał" />
+            <p class="about__description">Hej na codzień jestem zwykłym człowiekiem, a czasami staje się psychiczny. Kocham moją żonę która jest
+                moim aniołkiem i najlepszym moim człoiwekiem.<a class="about__link" href="https://Onet.pl">Wiadomości codzienne</a><br>
                 Lubię jeść KEBABY i inne fastfoody. Jednak walczę teraz o
-                to aby zrzućić tłuszczyk trzewny bo mam go za dużo<a href="#notatki">Przejdź do notatek</a></p>
+                to aby zrzućić tłuszczyk trzewny bo mam go za dużo<a class="about__link" href="#notatki">Przejdź do notatek</a></p>
         </section>
 
-        <section class="section" id="notatki">
-            <h2 class="secondary-heading">Notatki z WTF: Co ten Frontend</h2>
+        <section class="notes" id="notatki">
+            <h2 class="notes__heading">Notatki z WTF: Co ten Frontend</h2>
             <article class="week-summary">
                 <h3 class="week-summary__title">Jak stworzyć prawidłowego HTML-a?</h3>
                 <p class="week-summary__description">Tworzenie zgodnego ze standardami HTML-a to sztuka, którą do
@@ -67,14 +67,19 @@
                     taki, nie inny kolor. Dlatego też rośliny dość mocno barwią nasze ubrania, gdy np.: siadamy na
                     trawie. Jest to wyjątkowo mocny i intensywny barwik, który ciężko usunąć.</p>
             </article>
+
+            <article class="week-summary">
+                <h3 class="week-summary__title">Prace domowe</h3>
+                <p class="week-summary__description week-summary__description--js"></p>
+            </article>
         </section>
 
 
 
 
     </main>
-    <footer>
-        Strona domowa Michała Głosa, wszystkie treści są zmyślone. <a href="#top">Wróć na górę</a>
+    <footer class="footer">
+        Strona domowa Michała Głosa, wszystkie treści są zmyślone. <a class="footer__link" href="#top">Wróć na górę</a>
     </footer>
     <script src="main.js"></script>
 </body>

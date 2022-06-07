@@ -6,9 +6,6 @@ body {
     background: rgb(137, 194, 212);
 }
 
-.main-heading {
-    color: red;
-}
 
 .secondary-heading {
     color: #41850d;
@@ -82,4 +79,43 @@ img {
 }
 .week-summary__title {
     color: blueviolet;
+}
+
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main__heading {
+    color: red;
+}
+
+.about {
+
+}
+
+.about__heading {
+    color: #41850d;
+}
+
+.about__link {
+    color: yellow;
+}
+
+
+.notes {
+
+}
+
+.notes__heading {
+    color: #41850d;
+}
+
+.footer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer__link {
+    color: #41850d;
 }
