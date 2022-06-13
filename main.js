@@ -11,6 +11,22 @@ const heading = document.querySelector('.main__heading--js');
 
 heading.innerHTML = `Cześć! Mam na imię ${firstName} i mam ${age} lata.`
 
-const emptyParagraph = document.querySelector('.week-summary__description--js');
 
-emptyParagraph.innerHTML = 'Nawet uzupełniłem pracę domową Javascriptem!';
+
+
+function calculate(myNumber) {
+    console.log(`Dostałam ${myNumber}`)
+    return myNumber*7;
+}
+
+const myResult = calculate(5);
+
+console.log(myResult);
+
+
+function createContent(querySelectorContent, content) {
+    const element = document.querySelector(querySelectorContent);
+    element.innerHTML = content;
+}
+
+createContent('.week-summary__description--js', 'Witaj mordeczko w moim świecie!');
