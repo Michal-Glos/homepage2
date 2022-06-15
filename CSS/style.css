@@ -10,6 +10,14 @@ body {
     background: lightblue;
 }
 
+.page {
+    min-height: 100vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+}
+
 .section {
     background: rgb(137, 194, 212);
 }
@@ -122,6 +130,8 @@ img {
 .footer {
     max-width: 1000px;
     margin: 0 auto;
+    background-clip: padding-box;
+    background-color: rgba(255,255,255,0.4);
 }
 
 .footer__link {
@@ -131,3 +141,4 @@ img {
 .list {
     list-style: circle;
 }
+
