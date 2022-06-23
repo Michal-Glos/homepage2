@@ -67,6 +67,9 @@ img {
     background: darkmagenta;
     padding: 16px;
     border-radius: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .navigation__link {
@@ -115,7 +118,7 @@ img {
 }
 
 .about__link {
-    color: yellow;
+    color: darkorange;
 }
 
 

@@ -30,3 +30,14 @@ function createContent(querySelectorContent, content) {
 }
 
 createContent('.week-summary__description--js', 'Witaj mordeczko w moim świecie!');
+
+const greet = (age, firtsName) => {
+    console.log (`Witaj drogi odwiedzający, nazywam się ${firstName} i mam ${age} lata`)
+
+}
+
+greet(32, `Michał`);
+
+if ('Javascript' != 'Java') {
+    console.log('Java to nie Javascript');
+}
