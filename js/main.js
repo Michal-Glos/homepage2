@@ -24,6 +24,31 @@ const myResult = calculate(5);
 console.log(myResult);
 
 
+
+const humanOne = {
+    name: 'Maciek',
+    age: 32,
+    address: 'Warszawa'
+};
+
+const humanTwo = {
+    name: 'Ryszard',
+    age: 35,
+    address: humanOne.address
+};
+
+
+if (humanOne.age > humanTwo.age) {
+    console.log('Human one jest starszy');
+} else if (humanOne.age === humanTwo.age) {
+        console.log('Są tego samego wieku');
+} else {
+    console.log('Human two jest starszy');
+}
+
+
+
+
 function createContent(querySelectorContent, content) {
     const element = document.querySelector(querySelectorContent);
     element.innerHTML = content;
@@ -35,6 +60,9 @@ const greet = (age, firtsName) => {
     console.log (`Witaj drogi odwiedzający, nazywam się ${firstName} i mam ${age} lata`)
 
 }
+
+
+
 
 greet(32, `Michał`);
 
