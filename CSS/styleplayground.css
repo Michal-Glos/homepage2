@@ -1,0 +1,22 @@
+body {
+    min-height: 100vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+
+}
+
+
+.form {
+
+}
+
+.form__item {
+    display: block;
+    width: 100%;
+}
