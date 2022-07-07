@@ -13,10 +13,16 @@ body {
 
 
 .form {
+    width: 600px;
 
 }
 
 .form__item {
     display: block;
     width: 100%;
+}
+
+.form textarea {
+    width: 100%;
+    height: 300px;
 }

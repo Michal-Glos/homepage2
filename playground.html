@@ -12,28 +12,28 @@
 <body>
     <main>
         <h1>Forms playground</h1>
-        <form class="form">
+        <form action="https://dev.cotenfrontend.pl" class="form">
             <p>
                 <label for="firstName">Your Name:</label>
-                <input class="form__item" type="text" placeholder="Please enter your name" id="firstName"
+                <input required class="form__item" type="text" placeholder="Please enter your name" id="firstName"
                     name="firstName">
             </p>
 
             <p>
                 <label>Your Last Name:
-                    <input class="form__item" placeholder="Please enter your lastname" id="lastName" name="lastName">
+                    <input required class="form__item" placeholder="Please enter your lastname" id="lastName" name="lastName">
                 </label>
             </p>
 
             <p>
                 <label>Your phone number:
-                    <input class="form__item" placeholder="Please enter your phone number" id="phone" name="phone" type="tel">
+                    <input required class="form__item" placeholder="Please enter your phone number" id="phone" name="phone" type="tel">
                 </label>
             </p>
 
             <p>
                 <label>E-mail:
-                    <input class="form__item" placeholder="Please enter your E-mail" id="email" name="email" type="email">
+                    <input required class="form__item" placeholder="Please enter your E-mail" id="email" name="email" type="email">
                 </label>
             </p>
 
@@ -45,7 +45,7 @@
 
             <p>
                 <label>Password:
-                    <input class="form__item" id="password" name="password" type="password">
+                    <input required class="form__item" id="password" name="password" type="password">
                 </label>
             </p>
 
@@ -71,6 +71,20 @@
                 </p>
             </fieldset>
 
+            <p>
+                <label for="yourStory"> Your story: </label>
+                <textarea id="yourStory" name="yourStory">My story is...</textarea>
+            </p>
+            <p>
+                <label for="fastfood">Pick one fastfood: </label>
+                    <select name="fastfood" id="fastfood">
+                        <option value="fastfood-1">Kebab</option>
+                        <option value="fastfood-2">Burger</option>
+                        <option value="fastfood-3">Pizza</option>
+                        <option value="fastfood-4">Chinese food</option>
+                    </select>
+            </p>
+
             <fieldset>
                 <legend>Favourite band</legend>
                 <p><label><input name="band" type="radio" value="korn"> KoRn </label> </p>
@@ -86,6 +100,11 @@
             </p>
             <p>
                 <label><input name="disagree" type="checkbox" value="disagree">I do not agree</label>
+            </p>
+
+
+            <p>
+                <input type="submit" value="Send" />
             </p>
 
         </form>
