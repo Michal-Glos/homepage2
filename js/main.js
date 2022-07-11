@@ -7,9 +7,7 @@ console.log(age)
 console.log(`Cześć! Mam na imię ${firstName} i mam ${age} lata.`);
 
 
-const heading = document.querySelector('.main__heading--js');
 
-heading.innerHTML = `Cześć! Mam na imię ${firstName} i mam ${age} lata.`
 
 
 
@@ -69,3 +67,19 @@ greet(32, `Michał`);
 if ('Javascript' != 'Java') {
     console.log('Java to nie Javascript');
 }
+
+
+const button = document.querySelector('.action--js');
+
+console.log(button)
+
+const myClick =() => {
+    console.log('Kliknąłeś')
+    const heading = document.querySelector('.main__heading--js');
+    console.log(heading);
+    heading.innerHTML = `Zonk hahahaha`
+}
+
+button.addEventListener('click', myClick );
+
+
