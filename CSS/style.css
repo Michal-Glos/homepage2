@@ -1,147 +1,155 @@
 html {
-    box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 *, *:before, *:after {
-    box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 body {
-    background: lightblue;
-}
+  background: lightblue; }
 
 .page {
-    min-height: 100vh;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-image: url('../img/background.jpg');
-    background-size: cover;
-}
+  min-height: 100vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("../img/background.jpg");
+  background-size: cover; }
 
 .section {
-    background: rgb(137, 194, 212);
-}
-
+  background: #89c2d4; }
 
 .secondary-heading {
-    color: #41850d;
-}
+  color: #41850d; }
 
 p {
-    color: grey;
-}
+  color: grey; }
 
 .special-heading {
-    color: hotpink;
-}
-
+  color: hotpink; }
 
 a {
-    color: palevioletred;
-}
+  color: palevioletred; }
 
 nav a {
-    color: yellow;
-
-}
-
+  color: yellow; }
 
 img {
-    max-width: 100%;
-    max-height: 100%;
-}
+  max-width: 100%;
+  max-height: 100%; }
 
 .cssLogo {
-    padding: 10px 0;
-    height: 200px;
-    width: 200px;
-}
+  padding: 10px 0;
+  height: 200px;
+  width: 200px; }
 
 .htmlLogo {
-    padding: 10px 0;
-    height: 200px;
-    width: 200px;
-}
+  padding: 10px 0;
+  height: 200px;
+  width: 200px; }
+
+.header {
+  background: #fff;
+  min-height: 50.4px;
+  position: fixed;
+  top: 0;
+  width: 100%; }
 
 .navigation {
+  padding: 16px;
+  display: none; }
+  .navigation__link {
+    color: #790000;
+    display: block;
+    margin-bottom: 16px; }
+  .navigation__link:hover {
+    color: #17bedb; }
+  .navigation__link:visited {
+    color: #465b5f; }
+  .navigation __link--homepage {
+    color: #17bedb; }
+
+.navigation--open {
+  display: block; }
+
+.week-summary {
+  padding: 16px;
+  border: 1px red solid;
+  margin-bottom: 16px; }
+  .week-summary__special {
+    border-color: hotpink; }
+  .week-summary__description {
+    color: black; }
+  .week-summary__title {
+    color: blueviolet; }
+  .week-summary__title::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #790000;
+    border-radius: 50%;
+    margin-right: 6px; }
+
+.main {
+  max-width: 1000px;
+  margin: 60px auto 0; }
+  .main__heading {
+    color: red; }
+
+.about__heading {
+  color: #41850d; }
+
+.about__link {
+  color: darkorange; }
+
+.about__picture {
+  display: block;
+  max-width: 100%; }
+
+.notes__heading {
+  color: #41850d; }
+
+.footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-clip: padding-box;
+  background-color: rgba(255, 255, 255, 0.4); }
+  .footer__link {
+    color: #41850d; }
+
+.list {
+  list-style: circle; }
+
+.klasa-z-js {
+  background: yellow; }
+
+.hamburger {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background: none; }
+
+@media (min-width: 768px) {
+  .navigation {
     background: darkmagenta;
     padding: 16px;
     border-radius: 0px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-}
-
-.navigation__link {
-    color: #fff;
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.navigation__link--homepage {
-    background: darkolivegreen;
-    color: rgb(23, 190, 219)
-}
-
-.week-summary {
-    padding: 16px;
-    border: 1px rgb(255, 0, 0) solid;
-    margin-bottom: 16px;
-
-}
-.week-summary__special {
-    border-color: yellow;
-}
-
-.week-summary__description{
-    color:black;
-}
-.week-summary__title {
-    color: blueviolet;
-}
-
-.main {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.main__heading {
-    color: red;
-}
-
-.about {
-
-}
-
-.about__heading {
-    color: #41850d;
-}
-
-.about__link {
-    color: darkorange;
-}
-
-
-.notes {
-
-}
-
-.notes__heading {
-    color: #41850d;
-}
-
-.footer {
-    max-width: 1000px;
-    margin: 0 auto;
-    background-clip: padding-box;
-    background-color: rgba(255,255,255,0.4);
-}
-
-.footer__link {
-    color: #41850d;
-}
-
-.list {
-    list-style: circle;
-}
-
+    align-items: center; }
+  .navigation__link {
+    color: hotpink;
+    display: flex;
+    margin-bottom: 0px; }
+  .navigation__link:hover {
+    color: #17bedb; }
+  navigation__link:visited {
+    color: #465b5f; }
+  .week-summary:hover {
+    background: rgba(121, 0, 0, 0.3); }
+  .hamburger {
+    display: none; }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px; } }

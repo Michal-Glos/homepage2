@@ -69,17 +69,45 @@ if ('Javascript' != 'Java') {
 }
 
 
-const button = document.querySelector('.action--js');
+// const button = document.querySelector('.action--js');
 
-console.log(button)
+// console.log(button)
+
+// const myClick =() => {
+//     console.log('Kliknąłeś')
+//     const heading = document.querySelector('.main__heading--js');
+//     console.log(heading.innerHTML);
+//     heading.innerHTML = `Zonk hahahaha`;
+//     heading.classList.toggle('klasa-z-js');
+//     console.log(heading.innerHTML);
+// }
+
+// button.addEventListener('click', myClick );
+
+
+
+
+
+const hamburger = document.querySelector('.hamburger--js');
+
+hamburger.addEventListener('click', () => {
+    const nav = document.querySelector('.navigation--js');
+    nav.classList.toggle('navigation--open');
+})
+
+const button = document.querySelector('.action--js')
+
+
+
 
 const myClick =() => {
-    console.log('Kliknąłeś')
-    const heading = document.querySelector('.main__heading--js');
-    console.log(heading);
-    heading.innerHTML = `Zonk hahahaha`
+    if (heading = document.querySelector('.main__heading--js'));  
+        {heading.innerHTML = 'Zonk hahahaha' 
+        
+    } else { 
+        
+    }
+
 }
 
-button.addEventListener('click', myClick );
-
-
+button.addEventListener('click', myClick);
