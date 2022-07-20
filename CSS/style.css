@@ -1,3 +1,22 @@
+.week-summary {
+  padding: 16px;
+  border: 1px red solid;
+  margin-bottom: 16px; }
+  .week-summary::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #790000;
+    border-radius: 50%;
+    margin-right: 6px; }
+  .week-summary__special {
+    border-color: hotpink; }
+  .week-summary__description {
+    color: black; }
+  .week-summary__title {
+    color: blueviolet; }
+
 html {
   box-sizing: border-box; }
 
@@ -61,42 +80,41 @@ img {
     display: block;
     margin-bottom: 16px; }
   .navigation__link:hover {
-    color: #17bedb; }
+    color: #00abc9; }
   .navigation__link:visited {
-    color: #465b5f; }
+    color: #7ac5d4; }
   .navigation __link--homepage {
     color: #17bedb; }
 
 .navigation--open {
   display: block; }
 
-.week-summary {
-  padding: 16px;
-  border: 1px red solid;
-  margin-bottom: 16px; }
-  .week-summary__special {
-    border-color: hotpink; }
-  .week-summary__description {
-    color: black; }
-  .week-summary__title {
-    color: blueviolet; }
-  .week-summary__title::before {
+.main {
+  max-width: 1000px;
+  margin: 60px auto 0; }
+  .main__heading {
+    color: red; }
+    .main__heading::before {
+      content: "";
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: #790000;
+      border-radius: 50%;
+      margin-right: 15px;
+      margin-bottom: 4px; }
+
+.about__heading {
+  color: #41850d; }
+  .about__heading::before {
     content: "";
     display: inline-block;
     width: 12px;
     height: 12px;
     background: #790000;
     border-radius: 50%;
-    margin-right: 6px; }
-
-.main {
-  max-width: 1000px;
-  margin: 60px auto 0; }
-  .main__heading {
-    color: red; }
-
-.about__heading {
-  color: #41850d; }
+    margin-right: 15px;
+    margin-bottom: 2px; }
 
 .about__link {
   color: darkorange; }

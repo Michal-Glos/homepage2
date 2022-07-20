@@ -1,3 +1,5 @@
+@import "modules/week-summary.scss";
+
 html {
     box-sizing: border-box;
 }
@@ -80,10 +82,10 @@ img {
         margin-bottom: 16px;
     }
     &__link:hover {
-        color:rgb(23, 190, 219);
+        color:rgb(0, 171, 201);
     }
     &__link:visited {
-        color:rgb(70, 91, 95);
+        color:rgb(122, 197, 212);
     }
     __link--homepage {
         color: rgb(23, 190, 219)
@@ -94,35 +96,22 @@ img {
     display: block;
 }
 
-.week-summary {
-    padding: 16px;
-    border: 1px rgb(255, 0, 0) solid;
-    margin-bottom: 16px;
-    &__special {
-        border-color: hotpink;
-    }
-    &__description{
-        color:black;
-    }
-    &__title {
-        color: blueviolet;
-    }
-    &__title::before {
-        content:"";
-        display: inline-block;
-        width: 12px;
-        height: 12px;
-        background:rgb(121, 0, 0);
-        border-radius: 50%;
-        margin-right: 6px;
-    }
-}
 
 .main {
     max-width: 1000px;
     margin: 60px auto 0;
     &__heading {
         color: red;
+        &::before {
+            content:"";
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background:rgb(121, 0, 0);
+            border-radius: 50%;
+            margin-right: 15px;
+            margin-bottom: 4px;
+        }
     }
     
 }
@@ -130,6 +119,16 @@ img {
 .about {
     &__heading {
         color: #41850d;
+        &::before {
+            content:"";
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background:rgb(121, 0, 0);
+            border-radius: 50%;
+            margin-right: 15px;
+            margin-bottom: 2px;
+        }
     }
     &__link {
         color: darkorange;

@@ -1,3 +1,8 @@
+import {hello} from './greeting.js';
+
+console.log(hello('Shatan'));
+
+
 const firstName = 'Michał';
 const age = 32;
 
@@ -5,11 +10,6 @@ const age = 32;
 console.log(firstName);
 console.log(age)
 console.log(`Cześć! Mam na imię ${firstName} i mam ${age} lata.`);
-
-
-
-
-
 
 
 function calculate(myNumber) {
@@ -69,20 +69,20 @@ if ('Javascript' != 'Java') {
 }
 
 
-// const button = document.querySelector('.action--js');
+const button = document.querySelector('.action--js');
 
-// console.log(button)
+console.log(button)
 
-// const myClick =() => {
-//     console.log('Kliknąłeś')
-//     const heading = document.querySelector('.main__heading--js');
-//     console.log(heading.innerHTML);
-//     heading.innerHTML = `Zonk hahahaha`;
-//     heading.classList.toggle('klasa-z-js');
-//     console.log(heading.innerHTML);
-// }
+const myClick =() => {
+    console.log('Kliknąłeś')
+    const heading = document.querySelector('.main__heading--js');
+    console.log(heading.innerHTML);
+    heading.innerHTML = `Zonk hahahaha`;
+    heading.classList.toggle('klasa-z-js');
+    console.log(heading.innerHTML);
+}
 
-// button.addEventListener('click', myClick );
+button.addEventListener('click', myClick );
 
 
 
@@ -94,20 +94,3 @@ hamburger.addEventListener('click', () => {
     const nav = document.querySelector('.navigation--js');
     nav.classList.toggle('navigation--open');
 })
-
-const button = document.querySelector('.action--js')
-
-
-
-
-const myClick =() => {
-    if (heading = document.querySelector('.main__heading--js'));  
-        {heading.innerHTML = 'Zonk hahahaha' 
-        
-    } else { 
-        
-    }
-
-}
-
-button.addEventListener('click', myClick);
